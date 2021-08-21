@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TodoApp</title>
+    <style>
+        body{
+            background-image:url(./wal.jpg);
+            /* list-style-image: cross-fade(); */
+            background-repeat: no-repeat;
+            
+        }
+        #todoBar{
+            background-color:darkslategrey;
+            margin: -7px;
+            padding: 22px;
+            
+        }
+        h2{
+            color: white;
+        }
+        
+        #inp{
+            margin-top: 10px;
+            
+        }
+        #todoText{
+            width: 83%;
+            height: 30px;
+            border-radius: 5px;
+            
+        }
+        #messages{
+            border-radius: 20px;
+            width: 100%;
+        }
+        .submit-btn{
+            width: 15%;
+            height: 40px;
+            border-color: rebeccapurple;
+            border-radius: 15px;
+            background-color:rebeccapurple;
+            color: white;
+            font-style: italic;
+            font-weight: 700;
+        }
+         li{
+            padding-left: 400px;
+            display: block;
+            background-color: lightskyblue;
+            width: 33%;
+            height: 33px;
+            border: 1px solid;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            margin-left: 40px;
+            text-align: center;
+            font-family: sans-serif(red-serif);
+            list-style-type: none;
+            }
+        .btn{
+            width: 23px;
+            padding-left: 5px;
+        }
+        .edtBtn{
+            width: 25px;
+            padding-left:200px ;
+        }
+        .deleteAll{
+            width: 35px;
+            
+        }
+        
+    </style>
+</head>
+<body  align="center">
+    <!-- <button class="btn">Edit</button> -->
+    <div id="todoBar" >
+        <h2>TodoApp</h2>
+    </div>
+    <div id="inp">
+        <input type="text" id="todoText" placeholder="Add Todo.....">
+        <button class="submit-btn" onclick="addTask()">SUMBIT</button>
+    </div>
+    <div id="messages">
+        <ul id="list"> </ul>
+    </div>
+    <img src="./del2.png" class="deleteAll" onclick="deleteAll()">
+    
+</body>
+<script src="app.js"></script>
+</html>
